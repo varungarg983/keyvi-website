@@ -724,7 +724,7 @@
       gap: 2rem;
     }
     .footer-tag { font-family: 'DM Sans', sans-serif; font-size: 10.5px; color: var(--accent-sage); }
-    .footer-nav { display: flex; justify-content: center; gap: 2rem; list-style: none; }
+    .footer-nav { display: grid; grid-template-columns: auto auto; gap: 0.55rem 2.25rem; list-style: none; justify-content: center; }
     .footer-nav a {
       font-family: 'DM Sans', sans-serif;
       font-size: 10.5px;
@@ -1130,10 +1130,10 @@
     </div>
     <nav aria-label="Footer navigation">
       <ul class="footer-nav">
-        <li><a href="index.html#services">Services</a></li>
         <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#landlords">Landlords</a></li>
+        <li><a href="index.html#services">Services</a></li>
         <li><a href="properties.html">Properties</a></li>
+        <li><a href="index.html#landlords">Landlords</a></li>
         <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </nav>
