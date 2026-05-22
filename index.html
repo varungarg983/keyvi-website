@@ -388,9 +388,10 @@
       background-color: rgba(6,18,11,0.60);
       z-index: 1;
     }
-    /* content sits above both layers */
+    /* content sits above both layers — full width, centred */
     .hero-inner {
-      max-width: 1000px;
+      width: 100%;
+      text-align: center;
       position: relative;
       z-index: 2;
     }
@@ -412,12 +413,13 @@
       font-size: 18px;
       color: rgba(249,245,239,0.80);
       line-height: 1.75;
-      max-width: 540px;
-      margin-bottom: 3.5rem;
+      max-width: 600px;
+      margin: 0 auto 3.5rem;
     }
     .hero-cta {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 3rem;
       flex-wrap: wrap;
     }
@@ -799,7 +801,7 @@
     @media (max-width: 768px) {
       .nav-links, .btn-nav { display: none; }
       .burger { display: flex; }
-      .hero-cta { flex-direction: column; align-items: flex-start; gap: 1.75rem; }
+      .hero-cta { flex-direction: column; align-items: center; gap: 1.75rem; }
       .stats-row { grid-template-columns: repeat(2,1fr); }
       .stat { padding: 1.25rem 0.5rem; }
       .why-head, .how-head { margin-bottom: 4rem; }
